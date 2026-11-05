@@ -95,3 +95,14 @@ h1,h2,h3,h4,h5,h6,.brand-descriptor,.signature-description{text-transform:upperc
 
 /* Keep the supplied edits intact; a separate dark layer sits above the opening photos and below the wordmark. */
 .photographs img[src*="assets/portfolio/"]{filter:none}.hero .photographs:has(img[src*="assets/portfolio/"])::after{display:block;background:linear-gradient(180deg,rgba(25,29,20,.25),rgba(18,23,16,.46) 44%,rgba(18,23,16,.46) 63%,rgba(25,29,20,.3));z-index:2}.photographs img[src$="embrace.jpg"]{object-position:48% center}.contact-print img[src$="sky-portrait.jpg"]{object-position:center 60%}
+
+/* Original museum photographs are monochrome on the website; source files remain untouched. */
+img[src^="assets/editorial/"]{filter:grayscale(1)!important}
+
+/* Approved marks and postcard postscript. */
+.collection img[src$="pet-portrait.jpg"]{object-position:center 37%}
+.collection img[src$="engagement-toast.jpg"]{object-position:54% 57%}
+.faq-monogram{width:150px;margin:0 auto 28px}.faq-monogram img{display:block;width:100%;height:auto;filter:invert(1) sepia(.18);mix-blend-mode:screen}
+.postcard-vase-logo{display:block;width:132px;height:auto;max-height:170px;object-fit:contain;margin:24px auto 0}
+.contact-postcard .postcard-bottom-ps{display:block!important;grid-column:1/-1;text-align:center;align-self:end;margin:12px 0 0;padding:16px 0 0;font-size:29px!important;line-height:1.5!important;white-space:normal}
+@media(max-width:650px){.postcard-vase-logo{width:110px;max-height:142px;margin:22px auto 0}.contact-postcard .postcard-bottom-ps{font-size:26px!important;margin-top:0}.faq-monogram{width:130px}}
